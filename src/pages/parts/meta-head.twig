@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+{% set meta = {
+  title: 'Интернет-магазин',
+  lang: 'ru'
+} %}
+
+<html lang={{meta.lang}}>
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Самый лучший в мире интернет-магазин">
+
+  <title>{{meta.title}}</title>
+
+  <link rel="preload" href='../assets/fonts/fontello/fontello.woff' as="font" crossorigin>
+
+  <link rel="stylesheet" type="text/css" href="styles/index.css">
+  <link rel="stylesheet" type="text/css" href="styles/vendor/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="styles/vendor/magnific-popup.css"/>
+
+</head>
+<body>
+  {% include '../../blocks/_debug-menu/_debug-menu.twig' %}

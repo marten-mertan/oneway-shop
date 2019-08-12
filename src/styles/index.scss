@@ -1,0 +1,71 @@
+@import 'parts/_fonts';
+
+@import '../blocks/**/*.scss';
+
+$color-text: #000;
+$color-bg: #fff;
+
+html,
+body {
+  height: 100%;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+main{
+  flex: 1 0 auto;
+}
+p, 
+a,
+h1, 
+h2 {
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  font-size: inherit;
+}
+
+h1{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+a{
+  color: inherit;
+  font-size: inherit;
+  &:hover{
+    text-decoration: underline;
+    color: #4541FE;
+  }
+}
+
+ul
+{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  font-size: inherit;
+}
+
+button{
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+}
