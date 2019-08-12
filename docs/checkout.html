@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+
+<html lang=ru>
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Самый лучший в мире интернет-магазин">
+
+  <title>Интернет-магазин</title>
+
+  <link rel="preload" href='../assets/fonts/fontello/fontello.woff' as="font" crossorigin>
+
+  <link rel="stylesheet" type="text/css" href="styles/index.css">
+  <link rel="stylesheet" type="text/css" href="styles/vendor/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="styles/vendor/magnific-popup.css"/>
+
+</head>
+<body>
+  <div class="debug-menu">
+    <ul>
+        <p>Меню (для тестирования)</p>
+        <br/>
+        <li><a href="index.html">Главная страница</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="item.html">Карточка товара</a></li>
+        <li><a href="checkout.html">Оформление заказа</a></li>
+        <li><a href="checkout-success.html">Оформление заказа (успех)</a></li>
+        <li><a href="about.html">Информация</a></li>
+    </ul>
+
+    <style>
+    .debug-menu{
+        position: fixed;
+        padding: 20px 40px;
+        top: 10%;
+        left: -240px;
+        background: #fff;
+        border-radius: 20px;
+        border: 1px solid #000;
+        opacity: 0.5;
+        z-index: 999;
+    }
+    .debug-menu:hover{
+        left: -20px;
+        opacity: 1;
+    }
+    .debug-menu li+li{
+        margin-top: 8px;
+    }
+    </style>
+</div>
+
+<div class="wrapper">
+  <header class="header-mini">
+  <div class="header-mini__logo">
+    <h1 class="header-mini__title">Фетч</h1>
+    <span>Оформление заказа</span>
+  </div>
+</header>
+    <main class="main">
+
+      
+
+<section class="checkout">
+    <div class="checkout-items">
+        
+            <div class="checkout-item-card">
+  <div class="checkout-item-card__img">
+    <img src="assets/img/item-1.jpg" alt="Maison Margiela Fusion Low Sneakers">
+  </div>
+  <div class="checkout-item-card__description">
+    <p class="checkout-item-card__title">Maison Margiela Fusion Low Sneakers</p>
+    <p class="checkout-item-card__cat">Кроссовки</p>
+    <p class="checkout-item-card__price">92 000</p>
+  </div>
+</div>
+        
+            <div class="checkout-item-card">
+  <div class="checkout-item-card__img">
+    <img src="assets/img/item-2.jpg" alt="Maison Margiela Fusion Low Sneakers">
+  </div>
+  <div class="checkout-item-card__description">
+    <p class="checkout-item-card__title">Maison Margiela Fusion Low Sneakers</p>
+    <p class="checkout-item-card__cat">Кроссовки</p>
+    <p class="checkout-item-card__price">92 000</p>
+  </div>
+</div>
+        
+            <div class="checkout-item-card">
+  <div class="checkout-item-card__img">
+    <img src="assets/img/item-3.jpg" alt="Maison Margiela Fusion Low Sneakers">
+  </div>
+  <div class="checkout-item-card__description">
+    <p class="checkout-item-card__title">Maison Margiela Fusion Low Sneakers</p>
+    <p class="checkout-item-card__cat">Кроссовки</p>
+    <p class="checkout-item-card__price">92 000</p>
+  </div>
+</div>
+        
+        <p class="checkout-items__price">276 000</p>
+        <p class="checkout-items__delivery">Доставка бесплатно</p>
+    </div>
+    
+    <form class="checkout-form js-buy">
+        <label for="email">
+            <p>Эл.&nbsp;почта</p>
+            <input class="checkout-form__input" type="email" name="email" placeholder="petrov@yandex.ru" required>
+            <p class="checkout-form__details">Пришлём чеки и трек-номер</p>
+        </label>
+        <label for="tel">
+            <p>Телефон</p>
+            <input class="checkout-form__input" type="tel" name="tel" placeholder="+7 999 275-12-37" required>
+            <p class="checkout-form__details">Менеджер позвонит, чтобы подтвердить заказ</p>
+        </label>
+        <label for="city">
+            <p>Город</p>
+            <input class="checkout-form__input" type="text" name="city" placeholder="Москва" required>
+        </label>
+        <label for="address">
+            <p>Адрес</p>
+            <textarea class="checkout-form__textarea" type="text" name="address" rows="3" placeholder="Тимирязевская, 32, квартира 99, вход со двора" required></textarea>
+        </label>
+        <div class="checkout-form-submit">
+            <p class="checkout-form-submit__delivery">Бесплатная доставка курьером. <br/> Оплата картой онлайн.</p>
+            <button class="checkout-form-submit__button" type="submit">Оформить заказ, 276 000 &#x20bd;</button>
+        </div>
+    </form>
+</section>
+
+    </main>
+  <footer class="footer-mini">
+  <ul>
+    <li><p>© Фетч-команда, 2019</p></li>
+    <li><a class="footer-mini__phone" href="tel:8(800)912-11-42">
+        <p>8 800 912-11-42, звонок бесплатный</p>
+      </a></li>
+    <li><a href="mailto:shop@fetch.ru"><p>shop@fetch.ru</p></a></li>
+    <li><a class="js-link-popup" href="#rules"><p>Правила обработки персональных данных</p></a></li>
+  </ul>
+</footer>
+</div>
+
+ <div id="rules" class="mfp-hide white-popup-block">
+    <p>Основные правила организации</p>
+    <p>Задача организации, в особенности же рамки и место обучения кадров представляет собой интересный эксперимент проверки форм развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании форм развития.
+    </p>
+    <p>Товарищи! новая модель организационной деятельности играет важную роль в формировании направлений прогрессивного развития. Задача организации, в особенности же укрепление и развитие структуры требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что сложившаяся структура организации требуют определения и уточнения новых предложений. Повседневная практика показывает, что сложившаяся структура организации представляет собой интересный эксперимент проверки систем массового участия.
+    </p>
+    <p>Не следует, однако забывать, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. Повседневная практика показывает, что начало повседневной работы по формированию позиции требуют определения и уточнения существенных финансовых и административных условий. С другой стороны дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке форм развития. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке направлений прогрессивного развития.
+    </p>
+    <p>Равным образом новая модель организационной деятельности играет важную роль в формировании существенных финансовых и административных условий. С другой стороны консультация с широким активом в значительной степени обуславливает создание систем массового участия. Равным образом дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке новых предложений. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки новых предложений. Товарищи! рамки и место обучения кадров позволяет выполнять важные задания по разработке форм развития.
+    </p>
+</div>
+
+<div id="sizes" class="mfp-hide white-popup-block">
+<p>Таблица размеров</p>
+<div class="wrapper">
+    <table>
+        <tr>
+            <td>US</td>
+            
+            <td>4</td>
+            
+            <td>4.5</td>
+            
+            <td>5</td>
+            
+            <td>5.5</td>
+            
+            <td>6</td>
+            
+            <td>6.5</td>
+            
+            <td>7</td>
+            
+            <td>7.5</td>
+            
+        </tr>
+        <tr>
+            <td>UK</td>
+            
+            <td>3.5</td>
+            
+            <td>4</td>
+            
+            <td>4.5</td>
+            
+            <td>5</td>
+            
+            <td>5.5</td>
+            
+            <td>6</td>
+            
+            <td>6.5</td>
+            
+            <td>7</td>
+            
+        </tr>
+        <tr>
+            <td>EU</td>
+            
+            <td>36</td>
+            
+            <td>37</td>
+            
+            <td>38</td>
+            
+            <td>39</td>
+            
+            <td>40</td>
+            
+            <td>41</td>
+            
+            <td>42</td>
+            
+            <td>43</td>
+            
+        </tr>
+    </table>
+</div>
+    
+</div>
+
+
+<script src="scripts/api.js"></script>
+<script src="scripts/vendor/vue/vue.min.js"></script>
+<script src="scripts/vendor/jquery/jquery-3.4.1.min.js"></script>
+<script src="scripts/vendor/lazyLoad/lazysizes.min.js"></script>
+<script src="scripts/vendor/slick/slick.min.js"></script>
+<script src="scripts/vendor/magnific-popup/magnific-popup.min.js"></script>
+<script src="scripts/bundle.js"></script>
+
+</body>
+</html>

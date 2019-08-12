@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+
+<html lang=ru>
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Самый лучший в мире интернет-магазин">
+
+  <title>Интернет-магазин</title>
+
+  <link rel="preload" href='../assets/fonts/fontello/fontello.woff' as="font" crossorigin>
+
+  <link rel="stylesheet" type="text/css" href="styles/index.css">
+  <link rel="stylesheet" type="text/css" href="styles/vendor/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="styles/vendor/magnific-popup.css"/>
+
+</head>
+<body>
+  <div class="debug-menu">
+    <ul>
+        <p>Меню (для тестирования)</p>
+        <br/>
+        <li><a href="index.html">Главная страница</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="item.html">Карточка товара</a></li>
+        <li><a href="checkout.html">Оформление заказа</a></li>
+        <li><a href="checkout-success.html">Оформление заказа (успех)</a></li>
+        <li><a href="about.html">Информация</a></li>
+    </ul>
+
+    <style>
+    .debug-menu{
+        position: fixed;
+        padding: 20px 40px;
+        top: 10%;
+        left: -240px;
+        background: #fff;
+        border-radius: 20px;
+        border: 1px solid #000;
+        opacity: 0.5;
+        z-index: 999;
+    }
+    .debug-menu:hover{
+        left: -20px;
+        opacity: 1;
+    }
+    .debug-menu li+li{
+        margin-top: 8px;
+    }
+    </style>
+</div>
+
+<div class="wrapper">
+  <header class="header js-header ">
+  <div class="header__logo">
+    <a href="index.html"><h1>Фетч</h1></a>
+  </div>
+  <nav class="header__menu">
+    <ul>
+      <li><a href="index.html">Одежда</a></li>
+      <li><a href="index.html">Обувь</a></li>
+      <li><a href="index.html">Аксессуары</a></li>
+      <li><a href="index.html">Блог</a></li>
+      <li><a href="index.html">Магазин</a></li>
+      <li><a href="index.html">Доставка и оплата</a></li>
+    </ul>
+  </nav>
+  <div class="header__cart">
+    <a href="checkout.html">
+    <div class="header__item-counter">
+      <p>4</p>
+    </div>
+    <span class="header__cart-icon mod-fontello ">&#xe800;</span><span class="header__cart-text">Оформить заказ</span>
+    </a>
+  </div>
+</header>
+    <main class="main">
+
+      <div class="checkout-success">
+    <p class="checkout-success__title">Заказ №213 оформлен</p>
+    <p class="checkout-success__parag">Скоро вам позвонит менеджер, чтобы подтвердить заказ.</p>
+    <p class="checkout-success__parag"><a href="index.html">Вернуться на главную</a> или <a href="catalog.html">продолжить покупки в каталоге</a></p>
+</div>
+      
+
+<section class="recomend">
+    <p class="recomend__title">Вам может быть интересно</p>
+    <div class="recomend-slider js-slider-recomend">
+        
+        <div class="recomend-slider__element">
+            <div class="item-card" itemscope itemtype="http://schema.org/Product">
+  <a href="item.html">
+    <div class="item-card__img">
+      <img class="lazyload" data-src="assets/img/item-1.jpg" alt="Maison Margiela Fusion Low Sneakers">
+    </div>
+    <p itemprop="name" class="item-card__title">Maison Margiela Fusion Low Sneakers</p>
+    <p itemprop="description" class="item-card__cat">Кроссовки</p>
+    <p itemprop="price" class="item-card__price">92 000</p>
+  </a>
+</div>
+        </div>
+        
+        <div class="recomend-slider__element">
+            <div class="item-card" itemscope itemtype="http://schema.org/Product">
+  <a href="item.html">
+    <div class="item-card__img">
+      <img class="lazyload" data-src="assets/img/item-2.jpg" alt="Maison Margiela Fusion Low Sneakers">
+    </div>
+    <p itemprop="name" class="item-card__title">Maison Margiela Fusion Low Sneakers</p>
+    <p itemprop="description" class="item-card__cat">Кроссовки</p>
+    <p itemprop="price" class="item-card__price">92 000</p>
+  </a>
+</div>
+        </div>
+        
+        <div class="recomend-slider__element">
+            <div class="item-card" itemscope itemtype="http://schema.org/Product">
+  <a href="item.html">
+    <div class="item-card__img">
+      <img class="lazyload" data-src="assets/img/item-3.jpg" alt="Maison Margiela Fusion Low Sneakers">
+    </div>
+    <p itemprop="name" class="item-card__title">Maison Margiela Fusion Low Sneakers</p>
+    <p itemprop="description" class="item-card__cat">Кроссовки</p>
+    <p itemprop="price" class="item-card__price">92 000</p>
+  </a>
+</div>
+        </div>
+        
+        <div class="recomend-slider__element">
+            <div class="item-card" itemscope itemtype="http://schema.org/Product">
+  <a href="item.html">
+    <div class="item-card__img">
+      <img class="lazyload" data-src="assets/img/item-4.jpg" alt="Maison Margiela Fusion Low Sneakers">
+    </div>
+    <p itemprop="name" class="item-card__title">Maison Margiela Fusion Low Sneakers</p>
+    <p itemprop="description" class="item-card__cat">Кроссовки</p>
+    <p itemprop="price" class="item-card__price">92 000</p>
+  </a>
+</div>
+        </div>
+        
+        <div class="recomend-slider__element">
+            <div class="item-card" itemscope itemtype="http://schema.org/Product">
+  <a href="item.html">
+    <div class="item-card__img">
+      <img class="lazyload" data-src="assets/img/item-5.jpg" alt="Maison Margiela Fusion Low Sneakers">
+    </div>
+    <p itemprop="name" class="item-card__title">Maison Margiela Fusion Low Sneakers</p>
+    <p itemprop="description" class="item-card__cat">Кроссовки</p>
+    <p itemprop="price" class="item-card__price">92 000</p>
+  </a>
+</div>
+        </div>
+        
+    </div>
+</section>
+
+    </main>
+  <footer class="footer">
+  <div class="footer-top">
+    <div class="footer-top__info">
+      <p class="footer-top__logo mod-title">Фетч</p>
+      <ul>
+        <li><a href="index.html">Магазин</a></li>
+        <li><a href="index.html">Блог</a></li>
+        <li><a href="index.html">Доставка и оплата</a></li>
+        <li class="mod-email"><a href="mailto:shop@fetch.ru">shop@fetch.ru</a></li>
+        <li>
+          <a class="mod-phone" href="tel:8(800)912-11-42">
+            <p>8 800 912-11-42</p>
+            <p class="mod-phone-description">Звонок бесплатный</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-top__category">
+      <p class="mod-title"><a href="index.html">Для мужчин</a></p>
+      <ul>
+        <li><a href="index.html">Верхняя одежда</a></li>
+        <li><a href="index.html">Рубашки и поло</a></li>
+        <li><a href="index.html">Трикотаж</a></li>
+        <li><a href="index.html">Блюки и джинсы</a></li>
+        <li><a href="index.html">Бельё и носки</a></li>
+      </ul>
+    </div>
+    <div class="footer-top__category">
+      <p class="mod-title"><a href="index.html">Для женщин</a></p>
+      <ul>
+        <li><a href="index.html">Верхняя одежда</a></li>
+        <li><a href="index.html">Рубашки и поло</a></li>
+        <li><a href="index.html">Трикотаж</a></li>
+        <li><a href="index.html">Платья и юбки</a></li>
+        <li><a href="index.html">Бельё и носки</a></li>
+      </ul>
+    </div>
+    <div class="footer-top__category">
+      <p class="mod-title"><a href="index.html">Обувь</a></p>
+      <ul>
+        <li><a href="index.html">Кроссовки и кеды</a></li>
+        <li><a href="index.html">Ботинки</a></li>
+      </ul>
+    </div>
+    <div class="footer-top__category">
+      <p class="mod-title"><a href="index.html">Аксессуары</a></p>
+      <ul>
+        <li><a href="index.html">Сумки и рюкзаки</a></li>
+        <li><a href="index.html">Часы</a></li>
+        <li><a href="index.html">Бижутерия</a></li>
+        <li><a href="index.html">Средства для ухода</a></li>
+      </ul>
+    </div>
+    <div class="footer-top__category">
+      <p class="mod-title"><a href="index.html">Скидки</a></p>
+      <ul>
+        <li><a href="index.html">Летняя распродажа</a></li>
+        <li><a href="index.html">Коллекция 2018</a></li>
+      </ul>
+    </div>
+  </div>
+
+<div class="footer-bottom">
+  <p>© Фетч-команда, 2019</p>
+  <a class="js-link-popup" href="#rules"><p>Правила обработки персональных данных</p></a>
+  <a href="index.html"><p>Разработка и поддержка сайта</p></a>
+</div>
+
+</footer>
+</div>
+
+ <div id="rules" class="mfp-hide white-popup-block">
+    <p>Основные правила организации</p>
+    <p>Задача организации, в особенности же рамки и место обучения кадров представляет собой интересный эксперимент проверки форм развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании форм развития.
+    </p>
+    <p>Товарищи! новая модель организационной деятельности играет важную роль в формировании направлений прогрессивного развития. Задача организации, в особенности же укрепление и развитие структуры требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что сложившаяся структура организации требуют определения и уточнения новых предложений. Повседневная практика показывает, что сложившаяся структура организации представляет собой интересный эксперимент проверки систем массового участия.
+    </p>
+    <p>Не следует, однако забывать, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. Повседневная практика показывает, что начало повседневной работы по формированию позиции требуют определения и уточнения существенных финансовых и административных условий. С другой стороны дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке форм развития. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке направлений прогрессивного развития.
+    </p>
+    <p>Равным образом новая модель организационной деятельности играет важную роль в формировании существенных финансовых и административных условий. С другой стороны консультация с широким активом в значительной степени обуславливает создание систем массового участия. Равным образом дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке новых предложений. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки новых предложений. Товарищи! рамки и место обучения кадров позволяет выполнять важные задания по разработке форм развития.
+    </p>
+</div>
+
+<div id="sizes" class="mfp-hide white-popup-block">
+<p>Таблица размеров</p>
+<div class="wrapper">
+    <table>
+        <tr>
+            <td>US</td>
+            
+            <td>4</td>
+            
+            <td>4.5</td>
+            
+            <td>5</td>
+            
+            <td>5.5</td>
+            
+            <td>6</td>
+            
+            <td>6.5</td>
+            
+            <td>7</td>
+            
+            <td>7.5</td>
+            
+        </tr>
+        <tr>
+            <td>UK</td>
+            
+            <td>3.5</td>
+            
+            <td>4</td>
+            
+            <td>4.5</td>
+            
+            <td>5</td>
+            
+            <td>5.5</td>
+            
+            <td>6</td>
+            
+            <td>6.5</td>
+            
+            <td>7</td>
+            
+        </tr>
+        <tr>
+            <td>EU</td>
+            
+            <td>36</td>
+            
+            <td>37</td>
+            
+            <td>38</td>
+            
+            <td>39</td>
+            
+            <td>40</td>
+            
+            <td>41</td>
+            
+            <td>42</td>
+            
+            <td>43</td>
+            
+        </tr>
+    </table>
+</div>
+    
+</div>
+
+
+<script src="scripts/api.js"></script>
+<script src="scripts/vendor/vue/vue.min.js"></script>
+<script src="scripts/vendor/jquery/jquery-3.4.1.min.js"></script>
+<script src="scripts/vendor/lazyLoad/lazysizes.min.js"></script>
+<script src="scripts/vendor/slick/slick.min.js"></script>
+<script src="scripts/vendor/magnific-popup/magnific-popup.min.js"></script>
+<script src="scripts/bundle.js"></script>
+
+</body>
+</html>
