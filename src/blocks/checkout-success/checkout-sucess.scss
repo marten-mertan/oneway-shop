@@ -1,0 +1,27 @@
+.checkout-success{
+    margin: 80px 0 64px;
+    padding: 0 152px;
+    &__title{
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 41px;
+        margin-bottom: 32px;
+    }
+    &__parag{
+        font-size: 18px;
+        line-height: 23px;
+        & + .checkout-success__parag{
+            margin-top: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 1199px){
+    .checkout-success{
+        margin: 72px 0 56px;
+        padding: 0 16px;
+        &__title{
+            margin-bottom: 24px;
+        }
+    }
+}

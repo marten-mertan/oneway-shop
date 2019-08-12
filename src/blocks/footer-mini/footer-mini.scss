@@ -1,0 +1,36 @@
+.footer-mini {
+  display:        flex;
+  flex:           0 0 auto;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  color:          #000;
+  opacity: 0.5;
+  padding: 0 152px 24px;
+  &__phone{
+    text-decoration-line: none;
+    &:hover{
+      color: #000;
+      text-decoration-line: none;
+    }
+  }
+  ul{
+    display: flex;
+    li + li{
+      margin-left: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-mini {
+    padding: 56px 10px 72px;
+    ul{
+      flex-direction: column;
+      li + li{
+
+        margin: 16px 0 0 0;
+      }
+    }
+  }
+}

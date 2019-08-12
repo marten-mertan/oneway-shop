@@ -1,0 +1,77 @@
+.about{
+    display: grid;
+    grid-template-columns: 464fr 586fr;
+    grid-column-gap: 86px;
+    padding: 0 152px;
+    margin-top: 80px;
+    &-description{
+        margin-bottom: 64px;
+        &__title{
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 41px;
+            margin-bottom: 32px;
+        }
+        &__text{
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 23px;  
+            p + p{
+               margin-top: 24px; 
+            }
+        }
+    }
+    &-contacts{
+        padding: 27px 26px 32px;
+        margin-top: 46px;
+        background: #F2F2F2;
+        height: fit-content;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        &__address{
+            margin-bottom: 16px;
+        }
+
+        &__mail{
+            margin-bottom: 11px;
+        }
+
+        &__phone{
+            margin-bottom: 30px;
+        }
+
+        .mod-phone {
+            text-decoration: none;
+            font-weight: bold;
+            .mod-phone-description {
+              font-size:   13px;
+              line-height: 17px;
+              font-weight: normal;
+              opacity:     0.75;
+            }
+            &:hover{
+                color:   #000;
+            }
+          }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .about{
+        grid-template-columns: 1fr;
+        padding: 0;
+        margin-top: 72px;
+        &-description{
+            padding: 0 16px;
+            margin-bottom: 8px;
+            &__title{
+                margin-bottom: 24px;
+            }
+        }
+        &-contacts{
+            margin: 0;
+            padding: 16px 10px 24px;
+        }
+    }
+}

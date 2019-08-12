@@ -1,0 +1,44 @@
+.recomend{
+    padding: 0 152px;
+    margin-bottom: 64px;
+    &__title{
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+    &-slider{
+        .arrows{
+            position: absolute;
+            top: 46%;
+            z-index: 2;
+            filter: invert(1);
+            cursor: pointer;
+          }
+          .prev-arrow{
+            left: -48px;
+          }
+          .next-arrow{
+            right: -48px;
+          }
+        width: 100%;
+        &__element{
+            margin: 0 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 1199px){
+  .recomend{
+    padding: 0 16px;
+    margin-bottom: 40px;
+    &-slider{
+      .prev-arrow{
+        left: -12px;
+      }
+      .next-arrow{
+        right: -12px;
+      }
+    }
+  }
+}

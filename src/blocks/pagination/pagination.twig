@@ -1,0 +1,9 @@
+<div class="pagination">
+  <p class="pagination__title">Страницы</p>
+  <ul class="pagination__pages">
+    <li class="mod-active">1</li>
+    {% for i in 2..12 %}
+    <li><a href="#">{{i}}</a></li>
+    {% endfor %}
+  </ul>
+</div>

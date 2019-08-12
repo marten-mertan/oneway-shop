@@ -1,0 +1,54 @@
+{% set items = [
+  {
+    "id": 1,
+    "title": "Maison Margiela Fusion Low Sneakers",
+    "cat": "Кроссовки",
+    "price": "92 000",
+    "img": "item-1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Maison Margiela Fusion Low Sneakers",
+    "cat": "Кроссовки",
+    "price": "92 000",
+    "img": "item-2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Maison Margiela Fusion Low Sneakers",
+    "cat": "Кроссовки",
+    "price": "92 000",
+    "img": "item-3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Maison Margiela Fusion Low Sneakers",
+    "cat": "Кроссовки",
+    "price": "92 000",
+    "img": "item-4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Maison Margiela Fusion Low Sneakers",
+    "cat": "Кроссовки",
+    "price": "92 000",
+    "img": "item-5.jpg"
+  },
+] %}
+
+<div class="catalog">
+  <div class="catalog-info">
+    <div class="catalog-info__text">
+      <p>Обувь</p>
+    </div>
+  </div>
+
+  <div class="catalog-items">
+
+    {% for i in 1..16 %}
+      {% set item = random(items) %}
+      {% include '../item-card/item-card.twig' with item %}
+    {% endfor %}
+
+  </div>
+</div>

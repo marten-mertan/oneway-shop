@@ -1,0 +1,65 @@
+#rules{
+    background: #fff;
+    color: #000;
+    padding: 30px;
+    margin: 0 20%;
+    @media screen and (max-width: 1199px){
+        margin: 0;
+    }
+    p{
+      font-size: 16px;
+      margin-bottom: 20px;
+      &:first-child{
+        font-size: 30px;
+      }
+    }
+    button{
+      right: 20%;
+      @media screen and (max-width: 1199px){
+        right: 0;
+      }
+    } 
+  }
+
+  #sizes{
+    background: #fff;
+    color: #000;
+    padding: 30px;
+    margin: 0 20%;
+    @media screen and (max-width: 1199px){
+        margin: 0;
+    }
+    .wrapper{
+        @media screen and (max-width: 1199px){
+        overflow-x: scroll;
+        }
+    }
+    p{
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+    table, td {
+        margin: 0;
+        padding: 0;
+        border-spacing: 0;
+        
+    }
+    td{
+        min-width: 72px;
+        max-width: 72px;
+        height: 32px;
+        text-align: center;
+        border: 1px solid #ddd;
+        &:first-child{
+            font-weight: bold;
+        }
+    }
+    button{
+      right: 20%;
+      @media screen and (max-width: 1199px){
+        right: 0;
+      }
+    } 
+  }

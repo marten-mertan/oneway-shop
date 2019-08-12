@@ -1,0 +1,125 @@
+.header {
+  position:        absolute;
+  display:         flex;
+  flex-direction:  row;
+  justify-content: flex-start;
+  flex-wrap:       nowrap;
+  align-items:     center;
+  height:          48px;
+  box-sizing:      border-box;
+  width:           100%;
+  padding:         0 152px;
+  z-index:         10;
+
+  &__logo {
+    margin-right: 42px;
+    a{
+      text-decoration-line: none;
+      color: inherit;
+      &:hover{
+        text-decoration-line: none;
+        color: inherit;
+      }
+    }
+  }
+
+  &__menu {
+    margin-right: 42px;
+
+    ul {
+      display: flex;
+
+      li + li {
+        margin-left: 24px;
+      }
+    }
+  }
+
+  &__cart {
+    position:    relative;
+    margin-left: auto;
+
+    span + span {
+      margin-left: 6px;
+    }
+
+    &.mod-disabled {
+      a {
+        color:          inherit;
+        opacity:        0.5;
+        pointer-events: none;
+      }
+
+      .header__item-counter {
+        display: none;
+      }
+    }
+  }
+
+  &__cart-icon {
+    width:  18px;
+    height: 18px;
+  }
+
+  &__item-counter {
+    position:         absolute;
+    bottom:           11px;
+    left:             6px;
+    color:            #ffffff;
+    background-color: #4541fe;
+    width:            16px;
+    height:           16px;
+    border-radius:    50%;
+    text-align:       center;
+    font-size:        13px;
+    line-height:      17px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .header {
+    padding:     0 16px 0 16px;
+    white-space: nowrap;
+
+    &.mod-black {
+      background: #000000;
+
+      a:hover {
+        opacity: 1;
+      }
+    }
+
+    &__menu {
+      overflow-x: hidden;
+    }
+
+    &__cart {
+      &.mod-disabled {
+        a {
+          opacity: 1;
+        }
+      }
+    }
+
+    &__cart-text {
+      display: none;
+    }
+  }
+}
+
+.mod-black {
+  background: linear-gradient(267.53deg, rgba(0, 0, 0, 0) 0.07%, #0c0c0c 99.93%);
+  color:      #ffffff;
+
+  a:hover {
+    color:   #ffffff;
+    opacity: 0.5;
+  }
+}
+
+.mod-fontello {
+  font-family: "fontello";
+  font-style:  normal;
+  font-weight: normal;
+  color:       inherit;
+}

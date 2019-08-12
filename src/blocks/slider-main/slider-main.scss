@@ -1,0 +1,45 @@
+.slider{
+  position: relative;
+  min-height: 600px;
+  .arrows{
+    position: absolute;
+    top: 46%;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .prev-arrow{
+    left: 32px;
+  }
+  .next-arrow{
+    right: 32px;
+  }
+  &__title{
+    position: absolute;
+    bottom: 72px;
+    margin: 0 152px;
+    font-size: 64px;
+    line-height: 83px;
+    text-decoration-line: underline;
+    z-index: 2;
+  }
+  &__element{
+    img{
+      min-width: 100vw;
+      object-fit: cover;
+    }
+  }
+  .mod-white{
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .slider{
+    &__title{
+      font-size: 48px;
+      line-height: 62px;
+      bottom: 32px;
+      margin: 0 16px;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{% set items = [
+  {
+    "id": 1,
+    "title": "Maison Margiela Fusion Low Sneakers",
+    "cat": "Кроссовки",
+    "price": "92 000",
+    "img": "item-1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Maison Margiela Fusion Low Sneakers",
+    "cat": "Кроссовки",
+    "price": "92 000",
+    "img": "item-2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Maison Margiela Fusion Low Sneakers",
+    "cat": "Кроссовки",
+    "price": "92 000",
+    "img": "item-3.jpg"
+  },
+] %}
+
+<section class="checkout">
+    <div class="checkout-items">
+        {% for item in items %}
+            {% include '../checkout-item-card/checkout-item-card.twig' with item %}
+        {% endfor %}
+        <p class="checkout-items__price">276 000</p>
+        <p class="checkout-items__delivery">Доставка бесплатно</p>
+    </div>
+    
+    <form class="checkout-form js-buy">
+        <label for="email">
+            <p>Эл.&nbsp;почта</p>
+            <input class="checkout-form__input" type="email" name="email" placeholder="petrov@yandex.ru" required>
+            <p class="checkout-form__details">Пришлём чеки и трек-номер</p>
+        </label>
+        <label for="tel">
+            <p>Телефон</p>
+            <input class="checkout-form__input" type="tel" name="tel" placeholder="+7 999 275-12-37" required>
+            <p class="checkout-form__details">Менеджер позвонит, чтобы подтвердить заказ</p>
+        </label>
+        <label for="city">
+            <p>Город</p>
+            <input class="checkout-form__input" type="text" name="city" placeholder="Москва" required>
+        </label>
+        <label for="address">
+            <p>Адрес</p>
+            <textarea class="checkout-form__textarea" type="text" name="address" rows="3" placeholder="Тимирязевская, 32, квартира 99, вход со двора" required></textarea>
+        </label>
+        <div class="checkout-form-submit">
+            <p class="checkout-form-submit__delivery">Бесплатная доставка курьером. <br/> Оплата картой онлайн.</p>
+            <button class="checkout-form-submit__button" type="submit">Оформить заказ, 276 000 &#x20bd;</button>
+        </div>
+    </form>
+</section>

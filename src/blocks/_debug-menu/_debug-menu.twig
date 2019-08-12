@@ -1,0 +1,33 @@
+<div class="debug-menu">
+    <ul>
+        <p>Меню (для тестирования)</p>
+        <br/>
+        <li><a href="index.html">Главная страница</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="item.html">Карточка товара</a></li>
+        <li><a href="checkout.html">Оформление заказа</a></li>
+        <li><a href="checkout-success.html">Оформление заказа (успех)</a></li>
+        <li><a href="about.html">Информация</a></li>
+    </ul>
+
+    <style>
+    .debug-menu{
+        position: fixed;
+        padding: 20px 40px;
+        top: 10%;
+        left: -240px;
+        background: #fff;
+        border-radius: 20px;
+        border: 1px solid #000;
+        opacity: 0.5;
+        z-index: 999;
+    }
+    .debug-menu:hover{
+        left: -20px;
+        opacity: 1;
+    }
+    .debug-menu li+li{
+        margin-top: 8px;
+    }
+    </style>
+</div>
